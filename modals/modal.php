@@ -26,6 +26,14 @@ $db = new Medoo([
 ]);
 
 
+function adduser(){
+	global $db;
+	$db->insert('users' , [
+		
+	]);
+}
+
+
 
 class Modal extends Crud {
 	
