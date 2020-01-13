@@ -1,0 +1,104 @@
+html , body{
+    width: 100%;
+    margin: 0px;
+}
+body{
+    background: url(../images/earth.jpg);
+}
+.main{
+    font-family: Fira Code;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.281) 5% , rgba(0, 0, 0, 0.938) 40% );
+    // opacity: 0.9;
+    overflow: hidden;
+
+
+    .left{
+        float: left;
+        border: 0px solid red;
+        height: 100%;
+        width: 40%;
+        text-align: center;
+        font-family: Satisfy;
+
+        .logo{
+            width: 30%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 30%;
+        }
+        .title{
+            font-size: 50px;
+            text-align: center;
+            width: 100%;
+            color: white;
+            // font-style: Satisfy;
+        }
+        .subtitle{
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+            color: gray;
+            // font-style: Satisfy;
+        }
+
+
+    }
+    .right{
+        float: right;
+        border: 0px solid red;
+        height: 100%;
+        width: 50%;
+
+        .gridholder{
+            width: 70%;
+            margin: 0 auto;
+            height: auto;
+            margin-top: 25%;
+            border: 0px solid red;
+            max-height: 600px;
+            
+
+
+            .box{
+                height: 160px;
+                width: 160px;
+                margin: 10px;
+                background-color: lighten($color: #000000, $amount: 7%);
+                border-radius: 7px;
+                background: opacity(0.8);
+                float: left;
+                overflow: hidden;
+                
+                .title{
+                    color: white;
+                    height: 100%;
+
+                    background: linear-gradient(rgba(0, 0, 0, 0)2% ,rgba(20, 20, 20, 0.973) 80% );
+                    text-align: center;
+                    &:hover{
+                        background: linear-gradient(rgba(0, 0, 0, 0.89)2% ,rgba(20, 20, 20, 0.568) 90% );
+
+                    }
+                    .txt{
+                        padding-top: 120px;
+                        font-size: 22px;
+                    }
+                    
+                    
+                }
+
+                &:hover{
+                    // border-bottom: 2px solid orange;
+                    box-shadow: 1px 1px 6px rgb(0, 195, 255);
+
+                }
+
+            }
+        }
+    }
+}
+.clearfix{
+    clear: both;
+}

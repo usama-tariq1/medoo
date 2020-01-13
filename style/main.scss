@@ -1,0 +1,637 @@
+html , body{
+    width: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+
+
+}
+a{
+    text-decoration: none;
+
+}
+a:visited{
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    font-family: Fira Code;
+
+    
+
+    .sidebar{
+        width: 80px;
+        height: 95%;
+        margin-top: 15px;
+        background-color: lighten($color: #000000, $amount: 6%);
+        border-radius: 7px;
+        margin-left: 15px;
+        float: left;
+        margin-right: 15px;
+        overflow: hidden;
+        a{
+            text-decoration: none;
+            &:visited{
+                text-decoration: none;
+            }
+        }
+        .selected{
+            background-color: lighten($color: #000000, $amount: 10%) ;
+        }
+        .iholder{
+            width: 60%;
+            padding: 10px 0px;
+            margin: 0 auto;
+            margin-top: 15px;
+            // border: 1px solid red;
+            border-radius: 8px;
+            &:hover{
+                background-color: lighten($color: #000000, $amount: 10%) ;
+                .name{
+                    visibility: visible;
+                }
+            }
+
+            .icon{
+                width: 100%;
+                text-align: center;
+                .img{
+                    width: 50%;
+                    
+                }
+            }
+            .name{
+                font-size: 14px;
+                color: gray;
+                font-family: Fira Code;
+                text-align: center;
+                width: 100%;
+                margin-top: 8px;
+                visibility: hidden;
+            }
+        }
+
+    }
+
+    .cover{
+        border: 0px solid red;
+        height: 100%;
+        width:  90%;
+        float: left;
+        background: url(../images/c1.jpg) no-repeat;
+        background-size: 100% auto;
+        background-position-y: -200px;
+
+        
+
+        .overlay{
+            width: 100%;
+            // margin-top: 20%;
+            height: 100%;
+            margin: 0px;
+            // box-shadow: 1px 1px 200px black;
+            background: linear-gradient(rgba(0, 0, 0, 0.281) 5% , rgba(0, 0, 0, 0.938) 30% );
+
+            .testmenu{
+                position: absolute;
+                height: 60px;
+                width: 50%;
+                background-color: rgba(0, 0, 0, 0.747);
+                border-radius: 7px;
+                bottom: 0 ;
+                left: 30%;
+                // border: 1px solid red;
+                // box-shadow: 1px 1px 10px rgb(34, 34, 34);
+                z-index: 10;
+                text-align: center;
+                .btn{
+                    margin: 0 auto;
+                    background: none;
+                    border: none;
+                    border: 1px solid  green;
+                    border-radius: 5px;
+                    padding: 5px;
+                    margin-top: 10px;
+                    color: green;
+
+                    &:hover{
+                        color: white;
+                        background-color: green;
+                    }
+
+                    .t{
+                        visibility: hidden;
+                    }
+                    
+                    
+                }
+                
+                
+            }
+
+            .pop{
+                // height: 40px;
+                // width: 40px;
+                border: 0px solid red;
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 15px;
+
+                .menu{
+                    height: 0px;
+                    transition: 0.8s;
+                    width: 300px;
+                    overflow: hidden;
+
+                    background-color: lighten($color: #000000, $amount: 8%) ;
+                    border-radius: 7px;
+                    font-family: Fira Code;
+
+                    .heading{
+                        padding: 10px;
+                        color: white;
+                        font-size: 15px;
+                        font-family: Fira Code;
+                        border-bottom: 1px solid gray;
+
+
+                        span{
+                            float: right;
+                            color:gray;
+                            cursor: pointer;
+                            &:hover{
+                                color:white;
+                            }
+                        }
+                    }
+                    .body{
+                        width: 100%;
+                        
+                        text-align: center;
+                        margin-top: 10px;
+
+                        .txt{
+                            background-color: black;
+                            width: 80%;
+                            margin: 0 auto;
+                            margin-bottom: 15px;
+                            color: white;
+                            border: 1px solid gray;
+                            border-radius: 6px;
+                            text-align: center;
+
+                        }
+                        label{
+                            color: white;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+               
+            }
+
+
+            .heading{
+                font-size: 22px;
+                color: white;
+                text-align: center;
+                padding-top: 20px;
+                font-family: Satisfy;
+               
+            }
+            .ptitle{
+                font-size: 25px;
+                color: white;
+                text-align: center;
+                padding-top: 10px;
+                font-family: Big Shoulders Display;
+                letter-spacing: 10px;
+                // font-weight: bold;
+                 
+            }
+            .searchbox{
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+                .searchbar{
+                    width: 50%;
+                    height: 35px;
+                    background: none;
+                    background-color: rgba(0, 0, 0, 0.671);
+                    color: white;
+                    border: 1px solid gray;
+                    border-radius: 6px;
+                    font-size: 20px;
+                    text-align: center;
+                    margin: 0 auto;
+                    // margin-top: 20px;
+                    transition: 0.8s;
+                    outline: none;
+
+                    &:focus{
+                        width: 70%;
+                        transition: 0.8s;
+
+                    }
+                    
+                    
+                }
+                span{
+                    margin-left: -30px;
+                    margin-top: -5px;
+                    cursor: pointer;
+                    .img{
+                        height: 30px;
+                        margin-top: -5px;
+                    }
+                    .change{
+                        background-color: rgba(0, 0, 0, 0.418);
+                        color: white;
+                        width: 100px;
+                        text-align: center;
+                        // border: 1px solid gray;
+                        border-radius: 6px;
+                        border: none;
+                        margin-left: -80px;
+                        
+                        // float: none;
+                        // display: block;
+                        // margin: 0 auto;
+                        margin-top: -1px;
+                        height: 31px;
+
+                    }
+                }
+            }
+
+            .simplebar-scrollbar{
+                position:absolute;
+            }
+            .simplebar-scrollbar::before{
+                background-color:white;
+            
+            }
+
+
+            .form{
+                border: 0px solid red;
+                width: 90%;
+                height: 60vh;
+                margin: 0 auto;
+                margin-top: 40px;
+
+                .left{
+                    float: left;
+                    height: 100%;
+                    width: 48%;
+                    border: 0px solid red;
+
+                    label{
+                        color: white;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        width: 100%;
+                        font-size: 15px;
+                        margin-top: 15px;
+                    }
+
+                    .txt{
+                        background-color: black;
+                        color: white;
+                        width: 50%;
+                        text-align: center;
+                        border: 1px solid gray;
+                        border-radius: 6px;
+                        
+                        float: none;
+                        display: block;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                        height: 35px;
+
+                    }
+                    .big{
+                        margin-bottom: 20px;
+                        width: 70%;
+                    }
+                }
+                .right{
+                    float: right;
+                    height: 100%;
+                    width: 48%;
+                    border: 0px solid red;
+                    label{
+                        color: white;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        width: 100%;
+                        font-size: 15px;
+                        margin-top: 15px;
+                    }
+                    .txt{
+                        background-color: black;
+                        color: white;
+                        width: 50%;
+                        text-align: center;
+                        border: 1px solid gray;
+                        border-radius: 6px;
+                        
+                        float: none;
+                        display: block;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                        height: 35px;
+
+                    }
+                    .big{
+                        margin-bottom: 20px;
+                        width: 70%;
+                    }
+                }
+                .btn{
+                    display: block;
+                    margin: 0 auto;
+                    width: 20%;
+                }
+            }
+
+            .mcqs{
+                border: 0px solid red;
+                width: 80%;
+                height: 80vh;
+                margin: 0 auto;
+                margin-top: 20px;
+
+                .mcqs-bars{
+                    width: 100%;
+                    border: none;
+                    background: none;
+                    // border-left: 5px solid $primary;
+                    // border-right: 5px solid $primary;
+                    border-radius: 7px;
+                    text-align: left;
+                    color: rgba(233, 169, 31, 0.932);
+                    margin: 0 auto;
+                    font-size: 22px;
+                    font-family: arial;
+                    margin-bottom: 10px;
+                    background-color: lighten(black , 7%);
+                    padding: 10px;
+                    &:hover{
+                        .actions{
+                            margin-left: -10px;
+                            transition: 0.8s;
+                        }
+                    }
+                    .selected{
+                        color: green;
+                    }
+                    .actions{
+                        border: px solid red;
+                        width: 60px;
+                        height: 150px;
+                        position: absolute;
+                        margin-top: -10px;
+                        margin-left: -100px;
+                        // margin-left: -100px;
+                        border-radius: 7px;
+                        background-color: rgba(0, 0, 0, 0.836) ;
+                        transition: 0.8s;
+
+                        .icon{
+                            width: 60%;
+                            margin: 0 auto;
+                            margin-top: 8px;
+                            &:hover{
+                                width: 70%;
+                            }
+                            img{
+                                width: 100%;
+                            }
+                            
+                        }
+
+                    }
+                    .questions{
+                        margin-bottom: 10px;
+                    }
+    
+                    .btn{
+                        float: right;
+                        border: none;
+                        border: 1px solid green;
+                        color: green;
+                        border-radius: 4px;
+                        background: none;
+                        margin-top: -15px;
+                        margin-right: 10px;
+                        outline: none;
+                        &:hover{
+                            color: white;
+                            background-color: green;
+                        }
+                    }
+                    .subname{
+                        float: right;
+                        color:rgb(94, 94, 94);
+                        font-size: 15px;
+                        margin-top: -15px;
+                    }
+    
+                    .menu{
+                        height: 0px;
+                        width: 40%;
+                        float: right;
+                        // position: absolute;
+                        margin-right: -50px;
+                        margin-top: -30px;
+    
+                        
+                        background-color: black ;
+                        border-radius: 7px;
+                        
+                        overflow: hidden;
+                        transition: 0.8s;
+    
+    
+                        .head{
+                            color: white;
+                            font-size: 18px;
+                            border-bottom: 1px solid gray;
+    
+                            padding: 15px 20px;
+                            
+                            text-align: left;
+                            span{
+                                float: right;
+                                cursor: pointer;
+                                color: gray;
+                                &:hover{
+                                    color: white;
+                                }
+                            }
+                        }
+                        .body{
+                            font-size:12px;
+                            color: whitesmoke;
+                            padding :20px; 
+                        }
+    
+                    }
+                    .answer{
+                    border: none;
+                    background: none;
+                    border-radius: 50px;
+                    text-align: left;
+                    font: outline;
+                    margin: 0px;
+                    margin-left: 6px; 
+                    list-style-type: lower-alpha;
+                    font-size: 16px;
+                    color: lightgray;
+                    }
+                    
+                }
+            }
+
+            .subjectholder{
+                border: 0px solid red;
+                width: 61%;
+                height: 75vh;
+                margin: 0 auto;
+                margin-top: 20px;
+                tr{
+                    display: inline-flex;
+                }
+                .sm-box{
+                    height: 170px;
+                    width: 120px;
+                    background-color: lighten($color: #000000, $amount: 6%);
+                    border-radius: 7px;
+                    overflow: hidden;
+                    margin: 10px;
+                    // float: left;
+                    display: inline-flex;
+                    cursor: pointer;
+                    .artholder{
+                        width: 100%;
+                        height: 80px;
+                        // position: absolute;
+                        z-index: 1;
+                        
+                        .art{
+                            height: 100%;
+
+                        }
+                    }
+                    .info{
+                        background: linear-gradient(rgba(0, 0, 0, 0.281) 20% , rgba(19, 19, 19, 0.87) 40% );
+                        height: 170px;
+                        border-radius: 7px;
+                        width: 120px;
+                        // margin-top: -80px;
+                        position: absolute;
+                        border: 0px solid red;
+                        
+                        
+                        z-index: 2;
+                        .subname{
+                            color: white;
+                            width: 90%;
+                            
+                            margin: 0 auto;
+                            margin-top: 100px;
+                            text-align:center;
+                            font-family: Fira Code;
+                            
+                            
+                        }
+                    }
+
+                }
+                .lg-box{
+                    height: 220px;
+                    width: 120px;
+                    background-color: lighten($color: #000000, $amount: 6%);
+                    border-radius: 7px;
+                    overflow: hidden;
+                    margin: 10px;
+                    
+                    // float: left;
+                    display: inline-flex;
+                    // margin-top: 30px;
+                    cursor: pointer;
+                    .artholder{
+                        width: 100%;
+                        height: 80px;
+                        // position: absolute;
+                        z-index: 1;
+                        
+                        .art{
+                            height: 100%;
+
+                        }
+                    }
+                    .info{
+                        background: linear-gradient(rgba(0, 0, 0, 0.281) 20% , rgba(19, 19, 19, 0.87) 40% );
+                        height: 220px;
+                        width: 120px;
+                        border-radius: 7px;
+                        // margin-top: -80px;
+                        position: absolute;
+                        border: 0px solid red;
+                        
+                        
+                        z-index: 2;
+                        .subname{
+                            color: white;
+                            width: 90%;
+                            
+                            margin: 0 auto;
+                            margin-top: 100px;
+                            text-align:center;
+                            font-family: Fira Code;
+                            
+                            
+                        }
+                    }
+
+                }
+                .sm-box:hover , .lg-box:hover{
+                    box-shadow: 1px 1px 7px rgb(41, 41, 40);
+                }
+            }
+
+
+
+            .result{
+                width: 50%;
+                height: auto;
+                text-align: center;
+                margin: 0 auto;
+                .percent{
+                    font-size: 60px;
+                    color: green;
+
+                }
+                .marks{
+                    font-size: 40px;
+                    color: white;
+
+                }
+            }
+
+           
+
+
+        } // overlay end
+    }
+    
+
+}
+.clearfix{
+    clear: both;
+}

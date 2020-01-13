@@ -1,0 +1,102 @@
+html, body {
+  width: 100%;
+  margin: 0px;
+}
+
+body {
+  background: url(../images/earth.jpg);
+}
+
+.main {
+  font-family: Fira Code;
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(0, 0, 0, 0.281)), color-stop(40%, rgba(0, 0, 0, 0.938)));
+  background: linear-gradient(rgba(0, 0, 0, 0.281) 5%, rgba(0, 0, 0, 0.938) 40%);
+  overflow: hidden;
+}
+
+.main .left {
+  float: left;
+  border: 0px solid red;
+  height: 100%;
+  width: 40%;
+  text-align: center;
+  font-family: Satisfy;
+}
+
+.main .left .logo {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30%;
+}
+
+.main .left .title {
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.main .left .subtitle {
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  color: gray;
+}
+
+.main .right {
+  float: right;
+  border: 0px solid red;
+  height: 100%;
+  width: 50%;
+}
+
+.main .right .gridholder {
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 25%;
+  border: 0px solid red;
+  max-height: 600px;
+}
+
+.main .right .gridholder .box {
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  background-color: #121212;
+  border-radius: 7px;
+  background: opacity(0.8);
+  float: left;
+  overflow: hidden;
+}
+
+.main .right .gridholder .box .title {
+  color: white;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(20, 20, 20, 0.973)));
+  background: linear-gradient(rgba(0, 0, 0, 0) 2%, rgba(20, 20, 20, 0.973) 80%);
+  text-align: center;
+}
+
+.main .right .gridholder .box .title:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%, rgba(0, 0, 0, 0.89)), color-stop(90%, rgba(20, 20, 20, 0.568)));
+  background: linear-gradient(rgba(0, 0, 0, 0.89) 2%, rgba(20, 20, 20, 0.568) 90%);
+}
+
+.main .right .gridholder .box .title .txt {
+  padding-top: 120px;
+  font-size: 22px;
+}
+
+.main .right .gridholder .box:hover {
+  -webkit-box-shadow: 1px 1px 6px #00c3ff;
+          box-shadow: 1px 1px 6px #00c3ff;
+}
+
+.clearfix {
+  clear: both;
+}
+/*# sourceMappingURL=style.css.map */

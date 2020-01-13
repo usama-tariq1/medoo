@@ -1,0 +1,615 @@
+html, body {
+  width: 100%;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+  font-family: Fira Code;
+}
+
+.main .sidebar {
+  width: 80px;
+  height: 95%;
+  margin-top: 15px;
+  background-color: #0f0f0f;
+  border-radius: 7px;
+  margin-left: 15px;
+  float: left;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+.main .sidebar a {
+  text-decoration: none;
+}
+
+.main .sidebar a:visited {
+  text-decoration: none;
+}
+
+.main .sidebar .selected {
+  background-color: #1a1a1a;
+}
+
+.main .sidebar .iholder {
+  width: 60%;
+  padding: 10px 0px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.main .sidebar .iholder:hover {
+  background-color: #1a1a1a;
+}
+
+.main .sidebar .iholder:hover .name {
+  visibility: visible;
+}
+
+.main .sidebar .iholder .icon {
+  width: 100%;
+  text-align: center;
+}
+
+.main .sidebar .iholder .icon .img {
+  width: 50%;
+}
+
+.main .sidebar .iholder .name {
+  font-size: 14px;
+  color: gray;
+  font-family: Fira Code;
+  text-align: center;
+  width: 100%;
+  margin-top: 8px;
+  visibility: hidden;
+}
+
+.main .cover {
+  border: 0px solid red;
+  height: 100%;
+  width: 90%;
+  float: left;
+  background: url(../images/c1.jpg) no-repeat;
+  background-size: 100% auto;
+  background-position-y: -200px;
+}
+
+.main .cover .overlay {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(0, 0, 0, 0.281)), color-stop(30%, rgba(0, 0, 0, 0.938)));
+  background: linear-gradient(rgba(0, 0, 0, 0.281) 5%, rgba(0, 0, 0, 0.938) 30%);
+}
+
+.main .cover .overlay .testmenu {
+  position: absolute;
+  height: 60px;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.747);
+  border-radius: 7px;
+  bottom: 0;
+  left: 30%;
+  z-index: 10;
+  text-align: center;
+}
+
+.main .cover .overlay .testmenu .btn {
+  margin: 0 auto;
+  background: none;
+  border: none;
+  border: 1px solid  green;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+  color: green;
+}
+
+.main .cover .overlay .testmenu .btn:hover {
+  color: white;
+  background-color: green;
+}
+
+.main .cover .overlay .testmenu .btn .t {
+  visibility: hidden;
+}
+
+.main .cover .overlay .pop {
+  border: 0px solid red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 15px;
+}
+
+.main .cover .overlay .pop .menu {
+  height: 0px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  width: 300px;
+  overflow: hidden;
+  background-color: #141414;
+  border-radius: 7px;
+  font-family: Fira Code;
+}
+
+.main .cover .overlay .pop .menu .heading {
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  font-family: Fira Code;
+  border-bottom: 1px solid gray;
+}
+
+.main .cover .overlay .pop .menu .heading span {
+  float: right;
+  color: gray;
+  cursor: pointer;
+}
+
+.main .cover .overlay .pop .menu .heading span:hover {
+  color: white;
+}
+
+.main .cover .overlay .pop .menu .body {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.main .cover .overlay .pop .menu .body .txt {
+  background-color: black;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.main .cover .overlay .pop .menu .body label {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.main .cover .overlay .heading {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  font-family: Satisfy;
+}
+
+.main .cover .overlay .ptitle {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-family: Big Shoulders Display;
+  letter-spacing: 10px;
+}
+
+.main .cover .overlay .searchbox {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.main .cover .overlay .searchbox .searchbar {
+  width: 50%;
+  height: 35px;
+  background: none;
+  background-color: rgba(0, 0, 0, 0.671);
+  color: white;
+  border: 1px solid gray;
+  border-radius: 6px;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  outline: none;
+}
+
+.main .cover .overlay .searchbox .searchbar:focus {
+  width: 70%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.main .cover .overlay .searchbox span {
+  margin-left: -30px;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+.main .cover .overlay .searchbox span .img {
+  height: 30px;
+  margin-top: -5px;
+}
+
+.main .cover .overlay .searchbox span .change {
+  background-color: rgba(0, 0, 0, 0.418);
+  color: white;
+  width: 100px;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  margin-left: -80px;
+  margin-top: -1px;
+  height: 31px;
+}
+
+.main .cover .overlay .simplebar-scrollbar {
+  position: absolute;
+}
+
+.main .cover .overlay .simplebar-scrollbar::before {
+  background-color: white;
+}
+
+.main .cover .overlay .form {
+  border: 0px solid red;
+  width: 90%;
+  height: 60vh;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.main .cover .overlay .form .left {
+  float: left;
+  height: 100%;
+  width: 48%;
+  border: 0px solid red;
+}
+
+.main .cover .overlay .form .left label {
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.main .cover .overlay .form .left .txt {
+  background-color: black;
+  color: white;
+  width: 50%;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 6px;
+  float: none;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 35px;
+}
+
+.main .cover .overlay .form .left .big {
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.main .cover .overlay .form .right {
+  float: right;
+  height: 100%;
+  width: 48%;
+  border: 0px solid red;
+}
+
+.main .cover .overlay .form .right label {
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.main .cover .overlay .form .right .txt {
+  background-color: black;
+  color: white;
+  width: 50%;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 6px;
+  float: none;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 35px;
+}
+
+.main .cover .overlay .form .right .big {
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.main .cover .overlay .form .btn {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+}
+
+.main .cover .overlay .mcqs {
+  border: 0px solid red;
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars {
+  width: 100%;
+  border: none;
+  background: none;
+  border-radius: 7px;
+  text-align: left;
+  color: rgba(233, 169, 31, 0.932);
+  margin: 0 auto;
+  font-size: 22px;
+  font-family: arial;
+  margin-bottom: 10px;
+  background-color: #121212;
+  padding: 10px;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars:hover .actions {
+  margin-left: -10px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .selected {
+  color: green;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .actions {
+  border: px solid red;
+  width: 60px;
+  height: 150px;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -100px;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.836);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .actions .icon {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .actions .icon:hover {
+  width: 70%;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .actions .icon img {
+  width: 100%;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .questions {
+  margin-bottom: 10px;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .btn {
+  float: right;
+  border: none;
+  border: 1px solid green;
+  color: green;
+  border-radius: 4px;
+  background: none;
+  margin-top: -15px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .btn:hover {
+  color: white;
+  background-color: green;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .subname {
+  float: right;
+  color: #5e5e5e;
+  font-size: 15px;
+  margin-top: -15px;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .menu {
+  height: 0px;
+  width: 40%;
+  float: right;
+  margin-right: -50px;
+  margin-top: -30px;
+  background-color: black;
+  border-radius: 7px;
+  overflow: hidden;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .menu .head {
+  color: white;
+  font-size: 18px;
+  border-bottom: 1px solid gray;
+  padding: 15px 20px;
+  text-align: left;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .menu .head span {
+  float: right;
+  cursor: pointer;
+  color: gray;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .menu .head span:hover {
+  color: white;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .menu .body {
+  font-size: 12px;
+  color: whitesmoke;
+  padding: 20px;
+}
+
+.main .cover .overlay .mcqs .mcqs-bars .answer {
+  border: none;
+  background: none;
+  border-radius: 50px;
+  text-align: left;
+  font: outline;
+  margin: 0px;
+  margin-left: 6px;
+  list-style-type: lower-alpha;
+  font-size: 16px;
+  color: lightgray;
+}
+
+.main .cover .overlay .subjectholder {
+  border: 0px solid red;
+  width: 61%;
+  height: 75vh;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.main .cover .overlay .subjectholder tr {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.main .cover .overlay .subjectholder .sm-box {
+  height: 170px;
+  width: 120px;
+  background-color: #0f0f0f;
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.main .cover .overlay .subjectholder .sm-box .artholder {
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+}
+
+.main .cover .overlay .subjectholder .sm-box .artholder .art {
+  height: 100%;
+}
+
+.main .cover .overlay .subjectholder .sm-box .info {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(0, 0, 0, 0.281)), color-stop(40%, rgba(19, 19, 19, 0.87)));
+  background: linear-gradient(rgba(0, 0, 0, 0.281) 20%, rgba(19, 19, 19, 0.87) 40%);
+  height: 170px;
+  border-radius: 7px;
+  width: 120px;
+  position: absolute;
+  border: 0px solid red;
+  z-index: 2;
+}
+
+.main .cover .overlay .subjectholder .sm-box .info .subname {
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  font-family: Fira Code;
+}
+
+.main .cover .overlay .subjectholder .lg-box {
+  height: 220px;
+  width: 120px;
+  background-color: #0f0f0f;
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.main .cover .overlay .subjectholder .lg-box .artholder {
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+}
+
+.main .cover .overlay .subjectholder .lg-box .artholder .art {
+  height: 100%;
+}
+
+.main .cover .overlay .subjectholder .lg-box .info {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(0, 0, 0, 0.281)), color-stop(40%, rgba(19, 19, 19, 0.87)));
+  background: linear-gradient(rgba(0, 0, 0, 0.281) 20%, rgba(19, 19, 19, 0.87) 40%);
+  height: 220px;
+  width: 120px;
+  border-radius: 7px;
+  position: absolute;
+  border: 0px solid red;
+  z-index: 2;
+}
+
+.main .cover .overlay .subjectholder .lg-box .info .subname {
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  font-family: Fira Code;
+}
+
+.main .cover .overlay .subjectholder .sm-box:hover, .main .cover .overlay .subjectholder .lg-box:hover {
+  -webkit-box-shadow: 1px 1px 7px #292928;
+          box-shadow: 1px 1px 7px #292928;
+}
+
+.main .cover .overlay .result {
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main .cover .overlay .result .percent {
+  font-size: 60px;
+  color: green;
+}
+
+.main .cover .overlay .result .marks {
+  font-size: 40px;
+  color: white;
+}
+
+.clearfix {
+  clear: both;
+}
+/*# sourceMappingURL=main.css.map */
